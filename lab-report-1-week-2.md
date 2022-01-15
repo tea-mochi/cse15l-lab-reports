@@ -105,4 +105,4 @@ Commands or tips to quicken the workflow:
  - Have a list of commonly used commands to copy-paste.
  - Use up arrow in terminal to run recent commands quickly.
 
-![Image](11.png)
+[![Image](11.png)](11.png)
