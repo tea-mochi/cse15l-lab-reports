@@ -12,9 +12,6 @@
 
 - [Optimizing Remote Running](#optimizing-remote-running)
 
-prompt for my reference
-![Image](2.png)
-
 ## Installing VSCode
 
 Go [here](https://code.visualstudio.com/) and download VSCode
@@ -101,3 +98,11 @@ Now you can login or copy files without typing the password everytime
 
 ## Optimizing Remote Running
 
+Commands or tips to quicken the workflow:
+
+ - Use semicolons to run multiple commands in the same line.
+ - Open multiple terminals to avoid relogging into `ssh`.
+ - Have a list of commonly used commands to copy-paste.
+ - Use up arrow in terminal to run recent commands quickly.
+
+![Image](11.png)
