@@ -52,6 +52,31 @@ Once connected, the terminal will run commands on the remote server. You can try
 
 ## Moving Files with `scp`
 
+In VSCode, make a file named `WhereAmI.java` with the following code:
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+
+Now in the terminal with current directory being the one with the file type 
+
+```scp WhereAmI.java cs15lwi22aid@ieng6.ucsd.edu:~/```
+
+This will prompt a password, the same one used for `ssh`. Should look like this if successful:
+
+![Image](7.png)
+
+Now log back into the remote server with `ssh` and type `ls` in the console. This should show that there is now `WhereAmI.java` in the folder. Now compile and run the java file on the remote server, it shuold show this:
+
+![Image](8.png)
+
 ## Setting an SSH Key
 
 ## Optimizing Remote Running
