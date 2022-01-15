@@ -12,8 +12,7 @@
 
 - [Optimizing Remote Running](#optimizing-remote-running)
 
-prompt
-
+prompt for my reference
 ![Image](2.png)
 
 ## Installing VSCode
@@ -77,6 +76,28 @@ Now log back into the remote server with `ssh` and type `ls` in the console. Thi
 
 ![Image](8.png)
 
+---
+
 ## Setting an SSH Key
 
+Typing passwords = annoying, and `ssh` keys solve this problem.
+
+To up an `ssh` key, use the `ssh-keygen` command like so
+
+![Image](9.png)
+
+If on windows also follow `ssh-add` directions [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+
+Now `ssh-keygen` has generated a public and private key pair, and we have to move the public key to the server:
+
+1. While logged into the server, type `mkdir .ssh` and log out.
+2. On the client, type `scp \Users\timot\.ssh\id_rsa.pub cs15lwi22aid@ieng6.ucsd.edu:~/.ssh/authorized_keys` and enter password.
+
+Now you can login or copy files without typing the password everytime
+
+![Image](10.png)
+
+---
+
 ## Optimizing Remote Running
+
