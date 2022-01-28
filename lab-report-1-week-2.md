@@ -16,11 +16,11 @@
 
 Go [here](https://code.visualstudio.com/) and download VSCode
 
-![Image](3.png)
+![Image](report-1\3.png)
 
 It should look *something* like this:
 
-![Image](4.png)
+![Image](report-1\4.png)
 
 You can open projects from `File > Open Folder`, and open a new VSCode terminal with `Ctrl` + `Shift` + `` ` ``
 
@@ -34,7 +34,7 @@ ssh cs15lwi22aid@ieng6.ucsd.edu
 ```
 Then if it asks a message to continue connecting, type yes. Then it prompts for your password, which is the either the AD password or course-specific. If everything is done right and connection is successful it should look like this:
 
-![Image](5.png)
+![Image](report-1\5.png)
 
 ---
 
@@ -42,7 +42,7 @@ Then if it asks a message to continue connecting, type yes. Then it prompts for 
 
 Once connected, the terminal will run commands on the remote server. You can try `pwd` which prints the working directory, `ls` which lists files in the working directory, and other terminal commands. Log out of the remote server with `exit` or `Ctrl` + `D`.
 
-![Image](6.png)
+![Image](report-1\6.png)
 
 ---
 
@@ -67,11 +67,11 @@ Now in the terminal with current directory being the one with the file type
 
 This will prompt a password, the same one used for `ssh`. Should look like this if successful:
 
-![Image](7.png)
+![Image](report-1\7.png)
 
 Now log back into the remote server with `ssh` and type `ls` in the console. This should show that there is now `WhereAmI.java` in the folder. Now compile and run the java file on the remote server, it shuold show this:
 
-![Image](8.png)
+![Image](report-1\8.png)
 
 ---
 
@@ -81,7 +81,7 @@ Typing passwords = annoying, and `ssh` keys solve this problem.
 
 To up an `ssh` key, use the `ssh-keygen` command like so
 
-![Image](9.png)
+![Image](report-1\9.png)
 
 If on windows also follow `ssh-add` directions [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
 
@@ -92,7 +92,7 @@ Now `ssh-keygen` has generated a public and private key pair, and we have to mov
 
 Now you can login or copy files without typing the password everytime
 
-![Image](10.png)
+![Image](report-1\10.png)
 
 ---
 
@@ -105,4 +105,4 @@ Commands or tips to quicken the workflow:
  - Have a list of commonly used commands to copy-paste.
  - Use up arrow in terminal to run recent commands quickly.
 
-[![Image](11.png)](11.png)
+[![Image](report-1\11.png)](report-1\11.png)
