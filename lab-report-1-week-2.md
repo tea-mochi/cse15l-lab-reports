@@ -101,8 +101,21 @@ Now you can login or copy files without typing the password everytime
 Commands or tips to quicken the workflow:
 
  - Use semicolons to run multiple commands in the same line.
- - Open multiple terminals to avoid relogging into `ssh`.
+ - Open multiple terminals to avoid relogging into `ssh`. (Use split terminal function in VSCode)
  - Have a list of commonly used commands to copy-paste.
  - Use up arrow in terminal to run recent commands quickly.
 
 [![Image](report-1\11.png)](report-1\11.png)
+
+Once all this is setup, the workflow/process should be like this:
+
+ 1. Change the code in the file client side and save (not counted)
+ 2. <kbd>&uarr;</kbd> in the terminal to call the most recent `scp` command and press <kbd>enter</kbd> (2 keystrokes)
+ 3. Press <kbd>alt</kbd> + <kbd>&darr;</kbd> to switch to the ssh terminal that we have logged in alraedy previously. (2 keystrokes)
+    - You can do this in one keystroke by clicking to the other terminal, but keeping fingers on the keyboard seems to be faster.
+ 4. Since the last 2 commands on the `ssh` terminal are `javac` and `java`, press <kbd>&uarr;</kbd> twice to call `javac` and <kbd>enter</kbd>. (3 keystrokes)
+ 5. <kbd>&uarr;</kbd> twice again to call `java` and <kbd>enter</kbd>. (3 keystrokes)
+
+**Total Keystrokes:** 2 + 2 + 3 + 3 = **10 keystrokes** per run on the remote server.
+
+Compared to before these optimizations, typing even a single command manually would require more keystrokes, and without an `ssh` key the whole process would easily take 10x more keystrokes. It takes over 30 seconds to type everything, compared to as low as 5 seconds following the above.
