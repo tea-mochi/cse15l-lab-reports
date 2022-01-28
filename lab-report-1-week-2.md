@@ -111,7 +111,7 @@ Once all this is setup, the workflow/process should be like this:
 
  1. Change the code in the file client side and save (not counted)
  2. <kbd>&uarr;</kbd> in the terminal to call the most recent `scp` command and press <kbd>enter</kbd> (2 keystrokes)
- 3. Press <kbd>alt</kbd> + <kbd>&darr;</kbd> to switch to the ssh terminal that we have logged in alraedy previously. (2 keystrokes)
+ 3. Press <kbd>alt</kbd> + <kbd>&darr;</kbd> to switch to the ssh terminal that we have logged in already previously. (2 keystrokes)
     - You can do this in one keystroke by clicking to the other terminal, but keeping fingers on the keyboard seems to be faster.
  4. Since the last 2 commands on the `ssh` terminal are `javac` and `java`, press <kbd>&uarr;</kbd> twice to call `javac` and <kbd>enter</kbd>. (3 keystrokes)
  5. <kbd>&uarr;</kbd> twice again to call `java` and <kbd>enter</kbd>. (3 keystrokes)
