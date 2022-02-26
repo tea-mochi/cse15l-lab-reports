@@ -7,6 +7,7 @@ Link to my repo: [here](https://github.com/tea-mochi/markdown-parse)
 Link to other group's repo: [here](https://github.com/BasilThaddeus/markdown-parse)
 
 MarkdownParseTest added test cases. The same tests were added in both directories' `MarkdownParseTest.java` :
+
 ![Image](report-4/1.png)
 
 
@@ -22,9 +23,9 @@ I think this can be fixed by first finding whether inline code exists in the fil
 
 Snippet 2:
 
-I think handling nested links would require a large change, but there would be a relatively simple change to solve cases with nested parentheses, brackets, and escaped brackets. The change would be adding a method to find the close bracket/parenthesses, while counting for any open/close parentheses or open brackets, which is similar to what Joe had in his MarkdownParse. The escaped brackets can also be handled within this method, by checking the index(s) directly before backslashes.
+I think handling nested links would require a large change, but there would be a relatively simple change to solve cases with nested parentheses, brackets, and escaped brackets. The change would be adding a method to find the close bracket/parenthesses, while counting for any open/close parentheses or open brackets, which is similar to what Joe had in his MarkdownParse. The escaped brackets can also be handled within this method, by checking the index(s) directly before for backslashes.
 
-For nested links I think it would be a more involved change because since the code assumes the first open bracket will be the start of a valid link, we would have to implement some sort of logic to ignore it only if another valid link occurs inside.
+For nested links I think it would be a more involved change because since the code assumes the first open bracket will be the start of a valid link, we would have to implement some sort of logic to ignore it only if another valid link occurs inside. This would mean that on finding a new open bracket anywhere, even if invalid according to our current code, we have to check if it is the start of a valid link, which seems to be annoying.
 
 Snippet 3:
 
